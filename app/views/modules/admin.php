@@ -10,23 +10,22 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/nav.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="app/views/css/nav.css">
+    <link rel="stylesheet" type="text/css" href="app/views/css/style.css">
 
 
 
-    <link rel="icon" type="text/css" href="media/img/logoSwings.png">
+    <link rel="icon" type="text/css" href="app/views/media/img/logoSwings.png">
 </head>
 
 <body>
-
     <!-- Navbar-->
     <header class="header">
 
         <nav class="navbar navbar-expand-lg fixed-top py-3">
             <div class="container">
 
-                <a href="index.html"><img class="navbar-brand" src="media/img/logoSwings.png" id="logo"></a>
+                <a href="index.html"><img class="navbar-brand" src="app/views/media/img/logoSwings.png" id="logo"></a>
 
                 <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
@@ -216,7 +215,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <script src="js/nav.js"></script>
+    <script src="app/views/js/nav.js"></script>
 </body>
 
 <!-- Footer -->
@@ -282,15 +281,15 @@
                     <ul class="text-center">
 
                         <li class="list-inline-item"><a href=""><img class="navbar-brand"
-                                    src="media/img/facebook@2x.png"></a></li>
+                                    src="app/views/media/img/facebook@2x.png"></a></li>
                         <li class="list-inline-item"><a href=""><img class="navbar-brand"
-                                    src="media/img/twitter@2x.png"></a></li>
+                                    src="app/views/media/img/twitter@2x.png"></a></li>
                         <li class="list-inline-item"><a href=""><img class="navbar-brand"
-                                    src="media/img/instagram@2x.png"></a></li>
+                                    src="app/views/media/img/instagram@2x.png"></a></li>
                         <li class="list-inline-item"><a href=""><img class="navbar-brand"
-                                    src="media/img/google+@2x.png"></i></a></li>
+                                    src="app/views/media/img/google+@2x.png"></i></a></li>
                         <li class="list-inline-item"><a href="" target="_blank"><img class="navbar-brand"
-                                    src="media/img/mail@2x.png"></a></li>
+                                    src="app/views/media/img/mail@2x.png"></a></li>
                     </ul>
                 </div>
                 <hr>

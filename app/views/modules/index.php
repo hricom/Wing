@@ -10,9 +10,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="/app/views/css/nav.css">
-    <link rel="stylesheet" type="text/css" href="/app/views/css/style.css">
-    <link rel="icon" type="text/css" href="/app/views/css/style2.css">
+    <link rel="stylesheet" type="text/css" href="app/views/css/nav.css">
+    <link rel="stylesheet" type="text/css" href="app/views/css/style.css">
+    <link rel="icon" type="text/css" href="app/views/css/style2.css">
 
 </head>
 
@@ -23,7 +23,7 @@
         <nav class="navbar navbar-expand-lg fixed-top py-3">
             <div class="container">
 
-                <a href="index.html"><img class="navbar-brand" src="media/img/logoSwings.png" id="logo"></a>
+                <a href="index.html"><img class="navbar-brand" src="app/views/mediaimg/logoSwings.png" id="logo"></a>
 
                 <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right">
                     <i class="fa fa-bars"></i>
@@ -135,13 +135,13 @@
                             </p>
 
                         </div>
-                        <form action="#" class="appointment">
+                        <form action="index.php" method="post" class="appointment">
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="form-group">
                                         <label for="name">Usuario</label>
                                         <div class="input-wrap">
-                                            <input type="text" class="form-control" placeholder="">
+                                            <input type="text" name="user" class="form-control" placeholder="">
                                         </div>
                                     </div>
                                 </div>
@@ -149,7 +149,7 @@
                                     <div class="form-group">
                                         <label for="name">Contraseña</label>
                                         <div class="input-wrap">
-                                            <input type="password" class="form-control" placeholder="">
+                                            <input type="password" name="password" class="form-control" placeholder="">
                                         </div>
                                     </div>
                                 </div>
@@ -157,8 +157,9 @@
                                     <div class="form-group">
                                         <label for=""></label>
                                         <div class="input-wrap">
-                                            <a href="admin.html?action=registro" class="btn btn-secondary py-3 px-4">Ingresar</a>
-                                            <!--<button class="btn btn-secondary py-3 px-4">Ingresar</button> -->
+                                            <!-- <a href="admin.html?action=registro" class="btn btn-secondary py-3 px-4">Ingresar</a> -->
+                                            <button type="submit" name="submit"  class="btn btn-secondary py-3 px-4">Ingresar</button> 
+
                                         </div>
                                     </div>
                                 </div>
@@ -205,7 +206,7 @@
                 <div class="col-md-6">
                     <div class="img-alitas">
                         <h2>2x1 EN ALITAS</h2>
-                        <img src="media/img/swings-24.jpg">
+                        <img src="app/views/mediaimg/swings-24.jpg">
                     </div>
                     <div class="info">
                         <p>Martes y Miércoles</p>
@@ -215,7 +216,7 @@
                 <div class="col-md-6">
                     <div class="img-alitas">
                         <h2>30% EN COMBOS</h2>
-                        <img src="media/img/swings-50.jpg">
+                        <img src="app/views/mediaimg/swings-50.jpg">
                     </div>
                     <div class="info">
                         <p>En Combos de 30 y 50 Alitas</p>
@@ -256,7 +257,7 @@
                 <div class="col-md-4">
                     <div class="img-alitas">
                         <h2>Aros de cebolla</h2>
-                        <img src="media/img/ArosdeCebolla.jpg">
+                        <img src="app/views/mediaimg/ArosdeCebolla.jpg">
                     </div>
                     <div class="info">
                         <p>Deliciosos y crujientes aros de cebolla</p>
@@ -267,7 +268,7 @@
                 <div class="col-md-4">
                     <div class="img-alitas">
                         <h2>Bacon cheese</h2>
-                        <img src="media/img/BaconCheeseFries.jpg">
+                        <img src="app/views/mediaimg/BaconCheeseFries.jpg">
                     </div>
                     <div class="info">
                         <p>Papas a la francesa bañadas con queso cheddar y tocineta crujiente</p>
@@ -278,7 +279,7 @@
                 <div class="col-md-4">
                     <div class="img-alitas">
                         <h2>Mozzarella sticks</h2>
-                        <img src="media/img/MozzarellaSticks.jpg">
+                        <img src="app/views/mediaimg/MozzarellaSticks.jpg">
                     </div>
                     <div class="info">
                         <p>Dedos de mozarella con salsa de frutos rojos</p>
@@ -331,7 +332,7 @@
                     <div class="col-md-3">
                         <div class="img-alitas">
                             <h2>Combo 1</h2>
-                            <img src="media/img/Combo1.jpg">
+                            <img src="app/views/mediaimg/Combo1.jpg">
                         </div>
                         <div class="info">
                             <p>6 Alitas, 1 Porción de Papas y 1 Gaseosa de 400ml</p>
@@ -343,7 +344,7 @@
                     <div class="col-md-3">
                         <div class="img-alitas">
                             <h2>Combo 2</h2>
-                            <img src="media/img/Combo2.jpg">
+                            <img src="app/views/mediaimg/Combo2.jpg">
                         </div>
                         <div class="info">
                             <p>12 Alitas, 2 Porciones de Papas y 2 Gaseosas de 400ml</p>
@@ -355,7 +356,7 @@
                     <div class="col-md-3">
                         <div class="img-alitas">
                             <h2>Combo 3</h2>
-                            <img src="media/img/Combo3.jpg">
+                            <img src="app/views/mediaimg/Combo3.jpg">
                         </div>
                         <div class="info">
                             <p>30 Alitas, 1 Caja de Papas y 3 Gaseosas de 400ml</p>
@@ -367,7 +368,7 @@
                     <div class="col-md-3">
                         <div class="img-alitas">
                             <h2>Combo 4</h2>
-                            <img src="media/img/Combo4.jpg">
+                            <img src="app/views/mediaimg/Combo4.jpg">
                         </div>
                         <div class="info">
                             <p>50 Alitas, 2 Cajas de Papas y 4 Gaseosas de 400ml</p>
@@ -392,7 +393,7 @@
                     <div class="col-md-6">
                         <div class="img-alitas">
                             <h2>Combo 1</h2>
-                            <img src="media/img/ComboCostillaMedioRack.jpg">
+                            <img src="app/views/mediaimg/ComboCostillaMedioRack.jpg">
                         </div>
                         <div class="info">
                             <p>350g de Costilla BBQ + 2 Acompañantes</p>
@@ -403,7 +404,7 @@
                     <div class="col-md-6">
                         <div class="img-alitas">
                             <h2>Combo 2</h2>
-                            <img src="media/img/ComboCostillaFullRack.jpg">
+                            <img src="app/views/mediaimg/ComboCostillaFullRack.jpg">
                         </div>
                         <div class="info">
                             <p>750g de Costilla BBQ + 2 Acompañantes</p>
@@ -427,7 +428,7 @@
                     <div class="col-md-6">
                         <div class="img-alitas">
                             <h2>Combo jumbo</h2>
-                            <img src="media/img/JumboCombo.jpg">
+                            <img src="app/views/mediaimg/JumboCombo.jpg">
                         </div>
                         <div class="info">
                             <p>12 alitas, 1 porción de bacon cheese fries, 1 porción de camarón popcorn, 1 porción de dedos apanados y 1 porción de mozarella sticks </p>
@@ -438,7 +439,7 @@
                     <div class="col-md-6">
                         <div class="img-alitas">
                             <h2>Combo alitas y costillas</h2>
-                            <img src="media/img/ComboCostillasyAlitas.jpg">
+                            <img src="app/views/mediaimg/ComboCostillasyAlitas.jpg">
                         </div>
                         <div class="info">
                             <p>350g de Costillas BBQ + 6 Alitas</p>
@@ -480,7 +481,7 @@
                 <div class="col-md-3">
                     <div class="img-alitas">
                         <h2>6 unidades</h2>
-                        <img src="media/img/swings-6.jpg">
+                        <img src="app/views/mediaimg/swings-6.jpg">
                     </div>
                     <div class="info">
                         <p>Elige una salsa</p>
@@ -491,7 +492,7 @@
                 <div class="col-md-3">
                     <div class="img-alitas">
                         <h2>12 unidades</h2>
-                        <img src="media/img/swings-12.jpg">
+                        <img src="app/views/mediaimg/swings-12.jpg">
                     </div>
                     <div class="info">
                         <p>Elige dos salsas</p>
@@ -502,7 +503,7 @@
                 <div class="col-md-3">
                     <div class="img-alitas">
                         <h2>24 unidades</h2>
-                        <img src="media/img/swings-24.jpg">
+                        <img src="app/views/mediaimg/swings-24.jpg">
                     </div>
                     <div class="info">
                         <p>Elige cuatro salsas</p>
@@ -513,7 +514,7 @@
                 <div class="col-md-3">
                     <div class="img-alitas">
                         <h2>50 unidades</h2>
-                        <img src="media/img/swings-50.jpg">
+                        <img src="app/views/mediaimg/swings-50.jpg">
                     </div>
                     <div class="info">
                         <p>Elige todas las salsas</p>
@@ -551,7 +552,7 @@
                 <div class="col-md-6">
                     <div class="img-alitas">
                         <h2>6 bombones</h2>
-                        <img src="media/img/swings-6.jpg">
+                        <img src="app/views/media/img/swings-6.jpg">
                     </div>
                     <div class="info">
                         <p>Elige una salsa</p>
@@ -562,7 +563,7 @@
                 <div class="col-md-6">
                     <div class="img-alitas">
                         <h2>12 bombones</h2>
-                        <img src="media/img/swings-12.jpg">
+                        <img src="app/views/media/img/swings-12.jpg">
                     </div>
                     <div class="info">
                         <p>Elige dos salsas</p>
@@ -603,7 +604,7 @@
                 <div class="col-md-6">
                     <div class="img-alitas">
                         <h2>Costilla Medio Rack</h2>
-                        <img src="media/img/ComboCostillaMedioRack.jpg">
+                        <img src="app/views/mediaimg/ComboCostillaMedioRack.jpg">
                     </div>
                     <div class="info">
                         <p>350g de Costilla BBQ + 2 Acompañantes</p>
@@ -614,7 +615,7 @@
                 <div class="col-md-6">
                     <div class="img-alitas">
                         <h2>Costilla Full Rack</h2>
-                        <img src="media/img/ComboCostillaFullRack.jpg">
+                        <img src="app/views/mediaimg/ComboCostillaFullRack.jpg">
                     </div>
                     <div class="info">
                         <p>750g de Costilla BBQ + 2 Acompañantes</p>
@@ -643,7 +644,7 @@
 
                         <div class="description">
 
-                            <img src="media/img/location.png" alt="" width="32" height="32">
+                            <img src="app/views/mediaimg/location.png" alt="" width="32" height="32">
                             <h4 class="info-title">Dónde Estamos Ubicados</h4>
                             <p>Calle 95 # 79 A - 13, Robledo</p>
                         </div>
@@ -651,7 +652,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="hestia-info info info-horizontal">
-                        <img src="media/img/telephone.png" alt="" width="32" height="32">
+                        <img src="app/views/mediaimg/telephone.png" alt="" width="32" height="32">
                         <div class="description">
                             <h4 class="info-title">Linea única</h4>
                             <p>587 88 59</p>
@@ -660,7 +661,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="hestia-info info info-horizontal">
-                        <img src="media/img/schedule.png" alt="" width="32" height="32">
+                        <img src="app/views/mediaimg/schedule.png" alt="" width="32" height="32">
                         <div class="description">
                             <h4 class="info-title">Horario</h4>
                             <p>Lunes a Domigo 12 pm a 10 pm</p>
@@ -683,7 +684,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="/app/views/js/nav.js"></script>
+    <script src="app/views/js/nav.js"></script>
 </body>
 <footer>
     <!-- Footer -->
@@ -747,20 +748,20 @@
                     <ul class="text-center">
 
                         <li class="list-inline-item">
-                            <a href="https://www.facebook.com/gowingsco/" target="blanck"><img class="navbar-brand" src="media/img/facebook@2x.png"></a>
+                            <a href="https://www.facebook.com/gowingsco/" target="blanck"><img class="navbar-brand" src="app/views/media/img/facebook@2x.png"></a>
                         </li>
                         <li class="list-inline-item">
-                            <a href="https://twitter.com/login?lang=es/" target="blanck"><img class="navbar-brand" src="media/img/twitter@2x.png"></a>
+                            <a href="https://twitter.com/login?lang=es/" target="blanck"><img class="navbar-brand" src="app/views/media/img/twitter@2x.png"></a>
                         </li>
                         <li class="list-inline-item">
-                            <a href=""><img class="navbar-brand" src="media/img/instagram@2x.png"></a>
+                            <a href=""><img class="navbar-brand" src="app/views/media/img/instagram@2x.png"></a>
                         </li>
                         <li class="list-inline-item">
-                            <a href=""><img class="navbar-brand" src="media/img/google+@2x.png"></i>
+                            <a href=""><img class="navbar-brand" src="app/views/media/img/google+@2x.png"></i>
                             </a>
                         </li>
                         <li class="list-inline-item">
-                            <a href="" target="_blank"><img class="navbar-brand" src="media/img/mail@2x.png"></a>
+                            <a href="" target="_blank"><img class="navbar-brand" src="app/views/mediaimg/mail@2x.png"></a>
                         </li>
                     </ul>
                 </div>

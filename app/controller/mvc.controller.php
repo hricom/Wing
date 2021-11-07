@@ -1,8 +1,22 @@
 <?php
+
+require 'app/model/user.class.php';
+
 class mvc_controller
 {
-    function consultarUsuario($usuario, $contraseña)
+    function consultarUsuario($name, $password)
     {
+			$user = new user();
+			if($name!="" && $password!=""){
+				$isLogoin=$user->login($name, $password);
+				if($isLogoin!=null){
+					$html = $this->load_page('app/views/modules/admin.php');
+					$this->view_page($html);
+				}else{
+					$html = $this->load_page('app/views/modules/registro.php');
+					$this->view_page($html);
+				}
+			}
         $buscador = $this->load_page('app/views/modules/m.buscador.php');
     }
 
@@ -15,12 +29,10 @@ class mvc_controller
    */
    function principal()
    {
-       echo("=========== step (3) ==============");
 		// $pagina=$this->load_template('Pagina Principal MVC');				
 		$html = $this->load_page('app/views/modules/index.php');
 		// $pagina = $this->replace_content('/\#CONTENIDO\#/ms' ,$html , $pagina);
-        var_dump($html);
-		$this->view_page($pagina);
+		$this->view_page($html);
    }
 
    /* METODO QUE ESCRIBE EL CODIGO PARA QUE SEA VISTO POR EL USUARIO
@@ -31,7 +43,6 @@ class mvc_controller
 	*/
 	private function view_page($html)
 	{
-        echo("=========== step (4) ==============");
 		echo $html;
 	}
     /* METODO QUE CARGA UNA PAGINA DE LA SECCION VIEW Y LA MANTIENE EN MEMORIA

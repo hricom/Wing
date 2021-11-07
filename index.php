@@ -4,10 +4,11 @@
      //se instancia al controlador 
 	$mvc = new mvc_controller();
 
-	if( $_GET['action'] == 'registro' ) //muestra el modulo del buscador
+	if( $_POST['user']  && $_POST['password']  ) //muestra el modulo del buscador
 	{	
-        echo("=========== step (1) ==============");
-			$mvc->consultarUsuario();	
+			$name=$_POST['user'];
+			$password=$_POST['password'];
+			$mvc->consultarUsuario($name,$password);	
 	}
 	else //Si no existe GET o POST -> muestra la pagina principal
 	{	
