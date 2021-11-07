@@ -8,12 +8,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/nav.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="icon" type="text/css" href="media/img/logoSwings.png">
+    <link rel="stylesheet" type="text/css" href="/app/views/css/nav.css">
+    <link rel="stylesheet" type="text/css" href="/app/views/css/style.css">
+    <link rel="icon" type="text/css" href="/app/views/css/style2.css">
+
 </head>
 
 <body>
@@ -25,9 +25,7 @@
 
                 <a href="index.html"><img class="navbar-brand" src="media/img/logoSwings.png" id="logo"></a>
 
-                <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
-                    class="navbar-toggler navbar-toggler-right">
+                <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right">
                     <i class="fa fa-bars"></i>
                 </button>
 
@@ -36,8 +34,7 @@
                     <ul class="navbar-nav ml-auto">
 
                         <li class="nav-item px-4 dropdown">
-                            <a class="dropdown-toggle nav-link text-uppercase font-weight-bold" data-toggle="dropdown"
-                                href="#">Menú</a>
+                            <a class="dropdown-toggle nav-link text-uppercase font-weight-bold" data-toggle="dropdown" href="#">Menú</a>
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
 
 
@@ -78,8 +75,7 @@
                         </li>
 
                         <li class="dropdown">
-                            <a class="dropdown-toggle nav-link text-uppercase font-weight-bold" data-toggle="dropdown"
-                                href="#">Domicilios</a>
+                            <a class="dropdown-toggle nav-link text-uppercase font-weight-bold" data-toggle="dropdown" href="#">Domicilios</a>
                             <ul class="dropdown-menu">
                                 <li>
                                     <a href="#" class="dropdown-item hvr-sweep-to-top">Zona de cobertura</a>
@@ -88,8 +84,7 @@
                         </li>
 
                         <li class="dropdown">
-                            <a class="dropdown-toggle nav-link text-uppercase font-weight-bold" data-toggle="dropdown"
-                                href="#">Sobre nosotros</a>
+                            <a class="dropdown-toggle nav-link text-uppercase font-weight-bold" data-toggle="dropdown" href="#">Sobre nosotros</a>
                             <ul class="dropdown-menu">
                                 <li>
                                     <a href="#contacto" class="dropdown-item hvr-sweep-to-top">Contactanos</a>
@@ -136,7 +131,7 @@
                         <div class="total-donate d-flex align-items-center">
 
                             <p class="align-items-center">
-                            <h1>Iniciar sesión</h1>
+                                <h1>Iniciar sesión</h1>
                             </p>
 
                         </div>
@@ -162,7 +157,7 @@
                                     <div class="form-group">
                                         <label for=""></label>
                                         <div class="input-wrap">
-                                            <a href="admin.html" class="btn btn-secondary py-3 px-4">Ingresar</a>
+                                            <a href="admin.html?action=registro" class="btn btn-secondary py-3 px-4">Ingresar</a>
                                             <!--<button class="btn btn-secondary py-3 px-4">Ingresar</button> -->
                                         </div>
                                     </div>
@@ -175,8 +170,8 @@
                     <div class="heading-section pr-md-5 pt-md-5">
                         <span class="subheading">Bienvenido</span>
                         <h2 class="mb-4">Estamos aquí para servirte</h2>
-                        <p>Nos mueve la pasión por darte las mejores alitas de la ciudad, acompañado de un excelente
-                            servicio.</p>
+                        <p>Nos mueve la pasión por darte las mejores alitas de la ciudad, acompañado de un excelente servicio.
+                        </p>
                     </div>
 
                     <p><a href="registro.html" class="btn btn-secondary btn-outline-secondary">Registrate</a></p>
@@ -435,8 +430,7 @@
                             <img src="media/img/JumboCombo.jpg">
                         </div>
                         <div class="info">
-                            <p>12 alitas, 1 porción de bacon cheese fries, 1 porción de camarón popcorn, 1 porción de
-                                dedos apanados y 1 porción de mozarella sticks </p>
+                            <p>12 alitas, 1 porción de bacon cheese fries, 1 porción de camarón popcorn, 1 porción de dedos apanados y 1 porción de mozarella sticks </p>
                             <p>85.900</p>
                             <a href="#" class="text-danger">Ver más</a>
                         </div>
@@ -686,16 +680,10 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-    <script src="js/nav.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="/app/views/js/nav.js"></script>
 </body>
 <footer>
     <!-- Footer -->
@@ -758,16 +746,22 @@
                 <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
                     <ul class="text-center">
 
-                        <li class="list-inline-item"><a href="https://www.facebook.com/gowingsco/" target="blanck"><img class="navbar-brand"
-                                    src="media/img/facebook@2x.png"></a></li>
-                        <li class="list-inline-item"><a href="https://twitter.com/login?lang=es/" target="blanck"><img class="navbar-brand"
-                                    src="media/img/twitter@2x.png"></a></li>
-                        <li class="list-inline-item"><a href=""><img class="navbar-brand"
-                                    src="media/img/instagram@2x.png"></a></li>
-                        <li class="list-inline-item"><a href=""><img class="navbar-brand"
-                                    src="media/img/google+@2x.png"></i></a></li>
-                        <li class="list-inline-item"><a href="" target="_blank"><img class="navbar-brand"
-                                    src="media/img/mail@2x.png"></a></li>
+                        <li class="list-inline-item">
+                            <a href="https://www.facebook.com/gowingsco/" target="blanck"><img class="navbar-brand" src="media/img/facebook@2x.png"></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://twitter.com/login?lang=es/" target="blanck"><img class="navbar-brand" src="media/img/twitter@2x.png"></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href=""><img class="navbar-brand" src="media/img/instagram@2x.png"></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href=""><img class="navbar-brand" src="media/img/google+@2x.png"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="" target="_blank"><img class="navbar-brand" src="media/img/mail@2x.png"></a>
+                        </li>
                     </ul>
                 </div>
                 <hr>
@@ -781,7 +775,7 @@
         </div>
     </section>
 
-   
+
 </footer>
 <!-- ./Footer -->
 
